@@ -7,4 +7,5 @@ The main aim of this project is to securely store and retrieve data on the cloud
 Tech Stack
 
 Front end: React Native, JS
+
 Python-Django for Backend Developemnt
