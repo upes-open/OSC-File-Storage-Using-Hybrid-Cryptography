@@ -25,4 +25,4 @@ git add .
 ```shell
 git commit -m "your message"
 ```
-5. Raise your first PR :partying_face:
+5. Raise your first PR 
