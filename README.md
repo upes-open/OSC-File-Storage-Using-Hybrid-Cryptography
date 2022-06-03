@@ -39,7 +39,7 @@ Here's a brief intro about what a contributor must do in order to start developi
 1. Open VSCode 
 2. Copy the given command
 ```shell
-git clone (https://github.com/upes-open/OSC-File-Storage-Using-Hybrid-Cryptography.git)
+git clone https://github.com/upes-open/OSC-File-Storage-Using-Hybrid-Cryptography.git
 ```
 3. Go to folder according to the issue you are working and save your work
 ```shell
