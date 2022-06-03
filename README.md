@@ -13,25 +13,25 @@ Python-Flask for Backend Developemnt
 Methodology
 To achieve the above goal, the following methodology needs to be followed:
 
-Load the file on the server.
+1) Load the file on the server.
 
-Dividing the uploaded file into N parts.
+2) Dividing the uploaded file into N parts.
 
-Encrypting all the parts of the file using any one of the selected algorithms (Algorithm is changed with every part in round robin fashion).
+3) Encrypting all the parts of the file using any one of the selected algorithms (Algorithm is changed with every part in round robin fashion).
 
-The keys for cryptography algorithms is then secured using a different algorithm and the key for this algorithm is provided to the user as public key.
+4) The keys for cryptography algorithms is then secured using a different algorithm and the key for this algorithm is provided to the user as public key.
 
 After the above 4 steps you will have a N files which are in encrypted form which are stored on the server and a key which is downloaded as public key for decrypting the file and downloading it.
 
-To restore the file, follow the following steps:
+1) To restore the file, follow the following steps:
 
-Load the key on the server.
+2) Load the key on the server.
 
-Decrypt the keys of the algorithms.
+3) Decrypt the keys of the algorithms.
 
-Decrypt all the N parts of the file using the same algorithms which were used to encrypt them.
+4) Decrypt all the N parts of the file using the same algorithms which were used to encrypt them.
 
-Combine all the N parts to form the original file and provide it to the user for downloading.
+5) Combine all the N parts to form the original file and provide it to the user for downloading.
 
 
 ## Setup
