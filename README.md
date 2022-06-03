@@ -8,7 +8,7 @@ Tech Stack
 
 Front end: React Native, JS
 
-Python-Django for Backend Developemnt
+Python-Flask for Backend Developemnt
 
 ## Setup
 Here's a brief intro about what a contributor must do in order to start developing the project further:
