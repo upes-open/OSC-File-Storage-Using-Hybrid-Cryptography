@@ -10,7 +10,7 @@ Front end: React Native, JS
 
 Python-Flask for Backend Developemnt
 
-## Methodology: 
+## Methodology
 To achieve the above goal, the following methodology needs to be followed:
 
 1) Load the file on the server.
