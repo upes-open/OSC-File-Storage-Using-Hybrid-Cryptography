@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/" type="image" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/styles/tailwind.min.css"
+    />
+    <title>About OPEN!tSecurra</title>
+  </head>
+  <body
+    class="flex tracking-wider text-center justify-center overflow-x-hidden items-center h-screen"
+    style="background-color: black; color: #f2ebe9"
+  >
+    <video
+      src="../static/"
+      class="absolute bottom-0 md:-bottom-5 xl:bottom-0 w-64 md:w-150 xl:-right-5"
+      autoplay
+      muted
+      loop
+    ></video>
+    <div
+      class="rounded-2xl sm:w-2/3 mx-20 hover:shadow-2xl transform duration-300"
+      style="background-color: transparent"
+    >
+      <div class="m-10 lg:mx-20">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl mt-10 font-bold">
+          OPEN<span class="text-blue-600">!</span>SECURRA
+        </h1>
+        <h2 class="lg:text-lg">
+          Secure File Storage Using <em>`Hybr!d Cryptography` </em>
+        </h2>
+        <br /><br />
+        <!-- <h2 class="mt-12 text-center font-semibold text-3xl">`SUCCESSO`!</h2> -->
+        <div
+          class="h-64 overflow-y-scroll border border-white border-opacity-25 text-left px-3 sm:px-4 md:px-10 xl:px-20 mb-5 w-4/5 mx-auto"
+        >
+          <p class="mt-12 mb-5 mx-auto">
+            <strong>Objective:</strong> To achieve a platform users can believe
+            on for storing the files on cloud using hybrid cryptography.<br /><br />
+            <strong>Methodology:</strong>
+          </p>
+          <ol class="mb-5 list-decimal">
+            <li>Load the file on the server. It can be any type of file.</li>
+            <li>
+              Dividing the uploaded file into N parts depending on the fixed
+              block size.
+            </li>
+            <li>
+              Encrypting all the sub-files using any one of the selected
+              algorithms (Algorithm is changed with every part in round robin
+              fashion).
+            </li>
+            <li>
+              The keys for cryptography algorithms used are stored in a file and
+              then the resulting file is secured using a different cryptographic
+              algorithm and the key for this algorithm is provided to the user
+              as public key, which needs to be transferred safely to the
+              receiver. (Currently, we are using symmetric encryption, we may
+              also shift to authentication and asymmetric encryption in future.)
+            </li>
+          </ol>
+          <p>To restore:</p>
+          <br />
+          <ol class="mb-10 list-decimal">
+            <li>
+              Load the key (.pem file) on the server. Ask it from your sender.
+            </li>
+            <li>Decrypt the keys of the algorithms.</li>
+            <li>
+              Decrypt all the N subfiles using the same algorithms which were
+              used to encrypt them.
+            </li>
+            <li>
+              Combine all the N subfiles to form the original file and provide
+              it to the user for downloading.
+            </li>
+          </ol>
+        </div>
+        <table class="w-full">
+          <tr class="flex justify-center">
+            <td>
+              <a href="/home"
+                ><button
+                  class="py-2 px-4 border transform duration-200 text-black hover:text-white hover:bg-transparent bg-gray-100 hover:-translate-y-1"
+                >
+                  Back to Home
+                </button></a
+              >
+            </td>
+          </tr>
+        </table>
+        <br />
+        <div class="flex-col mx-auto mt-5 text-center">
+          <h5>© 2022 Open Community. All rights reserved</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

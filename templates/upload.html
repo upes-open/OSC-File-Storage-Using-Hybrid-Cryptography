@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/" type="image" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/styles/tailwind.min.css"
+    />
+    <title>Upload File</title>
+  </head>
+  <body
+    class="flex tracking-wider text-center justify-center overflow-x-hidden items-center h-screen"
+    style="background-color: black; color: #f2ebe9"
+  >
+    <video
+      src="../static/"
+      class="absolute bottom-0 md:-bottom-5 xl:bottom-0 w-64 md:w-150 xl:-right-5"
+      autoplay
+      muted
+      loop
+    ></video>
+    <div
+      class="rounded-2xl w-2/3 mx-20 hover:shadow-2xl transform duration-300"
+      style="background-color: transparent"
+    >
+      <div class="m-10 sm:mx-20 lg:mx-40">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl mt-10 font-bold">
+          OPEN<span class="text-blue-600">!</span>SECURRA
+        </h1>
+        <h2 class="lg:text-lg">
+          Secure File Storage Using <em>`Hybr!d Cryptography` </em>
+        </h2>
+        <br /><br />
+        <!-- <h2 class="mt-12 text-center font-semibold text-xl mb-5">Upload!</h2> -->
+        <form action="/data" method="POST" enctype="multipart/form-data">
+          <table class="w-full mb-5">
+            <tr class="flex justify-center">
+              <td class="text-center">
+                <label class="text-center font-semibold"
+                  >Attach your file to encrypt:</label
+                ><br />
+                <input type="file" name="file" required class="w-56 mt-4" />
+                <br /><br />
+                <div>
+                  <a href="upload"
+                    ><button
+                      type="submit"
+                      class="py-2 px-4 border transform duration-200 hover:text-black hover:bg-gray-100 hover:-translate-y-1"
+                    >
+                      Upload
+                    </button></a
+                  >
+                  <a href="/home"
+                    ><button
+                      type="button"
+                      class="py-2 px-4 mt-4 sm:my-0 sm:ml-10 border transform duration-200 text-black hover:text-white hover:bg-transparent bg-gray-100 hover:-translate-y-1"
+                    >
+                      Back to Home
+                    </button></a
+                  >
+                </div>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <br />
+        <div class="flex-col text-sm mx-auto mt-20 text-center">
+          <h5>© 2022 Open Community. All rights reserved</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
