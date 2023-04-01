@@ -45,7 +45,7 @@ def return_key():
     list_directory = tools.list_dir('key')
     filename = './key/' + list_directory[0]
     print(filename)
-    return send_file(filename, attachment_filename="My_Key.pem", as_attachment=True, cache_timeout=0)
+    return send_file(filename, download_name="My_Key.pem", as_attachment=True, cache_timeout=0)
 
 
 @app.route('/return-file/')
@@ -55,7 +55,7 @@ def return_file():
     print("****************************************")
     print(list_directory[0])
     print("****************************************")
-    return send_file(filename, attachment_filename=list_directory[0], as_attachment=True, cache_timeout=0)
+    return send_file(filename, download_name=list_directory[0], as_attachment=True, cache_timeout=0)
 
 
 @app.route('/download/')
